@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="login.png" type="image/x-icon">
+    <title>Login Form</title>
+</head>
+
+<body id="Body">
+    <!-- bACKGROUND gENERATOR -->
+     <div class="background">
+      <input type="color"  id="color1" value="red">
+      <input type="color"  id="color2" value="blue">
+
+     </div>
+
+    <section>
+        <div class="container">
+            <h1>Login </h1>
+            <div class="boX1">
+                <input type="text" class="in1"   placeholder="Username" required>
+                <input type="Password" class="in2" placeholder="Password" required>
+                <button class="b1">SIGN IN</button>
+            </div>
+            <div class="boX2">
+                <div class="div1">
+                    <input type="checkboX"> Remember Me
+                </div>
+                <div class="div">
+                    Forgot Password
+                </div>
+            </div>
+            <h3>-Or Sign In With-</h3>
+            <div class="boX3">
+                <i class="fa fa-google"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+        </div>
+
+    </section>
+<script >
+    let body=document.getElementById("Body");
+let color1 = document.getElementById("color1");
+let color2 = document.getElementById("color2");
+
+function grad(){
+body.style.background="linear-gradient(to right," + color1.value + ","  + color2.value + ")";
+}
+
+color1.addEventListener("input",grad);
+color2.addEventListener("input",grad);
+
+</script>
+
+</body>
+
+</html>
